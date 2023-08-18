@@ -81,8 +81,8 @@ void A27Emu_Reset(void){
     a27_state.msg.header.num_io_channels = 1;
     a27_state.msg.header.protection_value = rand() & 0xFF;
     a27_state.msg.header.protection_offset = A27DeriveChallenge(a27_state.msg.header.protection_value);
-    a27_state.msg.header.game_region = REGION_AMERICA;
-    a27_state.msg.header.align_1 = REGION_AMERICA;
+    a27_state.msg.header.game_region = REGION_EU;
+    a27_state.msg.header.align_1 = REGION_EU;
     strcpy(a27_state.msg.header.in_rom_version_name,IN_ROM_NAME);
     strcpy(a27_state.msg.header.ext_rom_version_name,EXT_ROM_NAME);
     a27_state.msg.header.inet_password_data = 0xFFFF;
