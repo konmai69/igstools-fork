@@ -4,12 +4,11 @@ from pmrecfile import generate_rec_file
 
 ELF_BASE = 0x08048000
 
-g_pchaSongName = 0x08171CE0
-m_pchaManName = 0x08171D60 
-g_pchaSongRank = 0x08171D94
-g_iaMaxBand = 0x0811FE78
-g_raBand1List = 0x0811D3E4
-
+g_pchaSongName = 0x08171BE0
+m_pchaManName = 0x08171C60
+g_pchaSongRank = 0x08171C94
+g_iaMaxBand = 0x0811FDF8
+g_raBand1List = 0x0811D364
 
 def addr2raw(addr,section_offset=0):
     return addr - (ELF_BASE + section_offset)
